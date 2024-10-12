@@ -1,0 +1,9 @@
+[user]
+	name = Scott Gilbert
+	email = scott.b.gilbert@gmail.com
+
+[merge]
+  conflictstyle = diff3 
+
+[init]
+  defaultBranch = main 
