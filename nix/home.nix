@@ -83,7 +83,7 @@
     enable = true;
     includes = [
       {
-        path = "../dotfiles/gitconfig";
+        path = ../dotfiles/gitconfig;
       }
     ];
     delta = {
@@ -130,7 +130,7 @@
     prefix = "C-a";
     baseIndex = 1;
     keyMode = "vi";
-    extraConfig = builtins.readFile ./tmux-extra.conf;
+    extraConfig = builtins.readFile ../config/tmux/extra.conf;
     plugins = with pkgs; [
       {
         plugin = tmuxPlugins.sensible;

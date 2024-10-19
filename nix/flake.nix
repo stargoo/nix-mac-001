@@ -34,6 +34,7 @@
         system = arch;
         modules = [
           ./darwin-configuration.nix # your configuration for macOS
+          home-manager.darwinModules.home-manager
         ];
         pkgs = import nixpkgs {system = arch;}; # for Mac with ARM chip
         specialArgs = {inherit nix-darwin;};

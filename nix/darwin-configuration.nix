@@ -21,6 +21,7 @@
   environment.systemPackages = with pkgs; [
     wget
     htop
+    home-manager
     # (pkgs.mkShell {
     #   buildInputs = [ pkgs.git ];
     # })
