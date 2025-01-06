@@ -22,6 +22,7 @@
     fd
     wget
     rename
+    pkgs-unstable.yazi
   ];
 
   home.file = {
@@ -81,6 +82,11 @@
 
   programs.git = {
     enable = true;
+    userEmail = "scott.b.gilbert@protonmail.com" ;
+    userName = "Scott Gilbert";
+    extraConfig = {
+      init.defaultBranch = "master";
+    };
     includes = [
       {
         path = ../dotfiles/gitconfig;
@@ -117,6 +123,9 @@
       man="batman";
       archive="ua";
       config="git --git-dir=$HOME/.cfg --work-tree=$HOME";
+    };
+    sessionVariables = {
+        EDITOR = "nvim";
     };
   };
 
