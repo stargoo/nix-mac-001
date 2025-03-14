@@ -10,6 +10,7 @@
   programs.home-manager.enable = true;
 
   home.packages = with pkgs; [
+    gum
     pkgs-unstable.neovim
     pkgs-unstable.oh-my-posh
     sl
@@ -118,6 +119,7 @@
       tree="eza --tree";
       vim="nvim";
       c="clear";
+      cats="bat -p";
       cat="bat";
       gitcom="git commit -F- <<EOF";
       man="batman";
